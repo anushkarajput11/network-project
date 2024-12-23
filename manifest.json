@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-Phishing Extension",
+  "version": "1.0",
+  "description": "Detects potential phishing URLs and warns the user.",
+  "permissions": ["activeTab", "notifications"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "image1.png",
+      "48": "image1.png",
+      "128": "image1.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}
